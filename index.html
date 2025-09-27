@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Easily convert PNG images to JPG format and replace transparent backgrounds with solid colors. Our tool ensures high-quality image conversion and background customization.">
+  <title>PNG to JPG Converter | Transform Transparent Backgrounds to Solid Colors</title>
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa1YvvGSfC5CJ3ZXudKCkbYp0FXeh9cbON0fuJEHQBh4Mx1DxKUD0Q2M3dN" crossorigin="anonymous">
+ 
+  <link href="css/main-style.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <!-- Main Content Section -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12">
+       
+        
+        <div id="container">
+            <h1>Upload Your Files</h1>
+       
+            <div id="uploadArea" class="upload-area">
+                <input type="file" id="upload" accept="image/*" multiple>
+                <label for="upload" class="upload-label">
+                    <span class="upload-icon">📁</span>
+                    <span class="upload-text">Drag & Drop your files here or click to select</span>
+                </label>
+            </div>
+            
+            <div id="colorOptions" class="color-options">
+                <button data-color="#ff0000" class="color-btn active" style="background-color: #ff0000;"></button>
+                <button data-color="#000000" class="color-btn" style="background-color: #000000;"></button>
+                <button data-color="#0000ff" class="color-btn" style="background-color: #0000ff;"></button>
+                <button data-color="#004aad" class="color-btn" style="background-color: #004aad;"></button>
+                 <button data-color="#cb6ce6" class="color-btn" style="background-color: #cb6ce6;"></button>
+                 <button data-color="#fff" class="color-btn" style="background-color: #fff;"></button>
+            </div>
+    
+            <div id="previews" class="previews">
+                <!-- Preview images and download links will be displayed here -->
+            </div>
+    
+            <div id="controls">
+                <button id="generateAll">Generate All Images</button>
+                <button id="downloadAll" disabled>Download All Images</button>
+            </div>
+    
+            <canvas id="canvas"></canvas>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-QFZykdKyZLlEB4K0BlTXFEJ4owNMMm2ApB4TF78LrQnZx6F9XjF7dM8rN7vmst0l" crossorigin="anonymous"></script>
+  <script src="script/main.js"></script>
+</body>
+</html>
